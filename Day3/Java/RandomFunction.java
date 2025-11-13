@@ -1,6 +1,6 @@
 package Day3.Java;
 
-public class BubbleSort {
+public class RandomFunction {
 
     public static void main(String[] args) {
         int inputArray[] = new int[25];
