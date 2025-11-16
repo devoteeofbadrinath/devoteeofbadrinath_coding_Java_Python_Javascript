@@ -8,4 +8,4 @@ class AverageSubArray:
 
 
 averageSubArray = AverageSubArray()
-averageSubArray.averageSubArray([1,2], 1)
+averageSubArray.averageSubArray([-1], 1)
