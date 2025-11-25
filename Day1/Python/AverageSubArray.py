@@ -14,4 +14,4 @@ class AverageSubArray:
 
 
 averageSubArray = AverageSubArray()
-averageSubArray.averageSubArray([1,2,3,4], 2
+averageSubArray.averageSubArray([1,2,3,4], 2)
