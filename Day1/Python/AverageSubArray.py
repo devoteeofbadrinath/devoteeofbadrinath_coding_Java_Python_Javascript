@@ -1,17 +1,10 @@
 class AverageSubArray:
-    def averageSubArray(self, input, l):
-        sum = 0
-        for i in range(0,len(input)):
-            if i==0 and l==1:
-                print(input[i])
-            if i<l:
-                sum = sum + input[i]
-                continue
-            else:
-                #max = sum
-                sum = sum + input[i] - input[i-l]
-            print(sum)
-
-
+    def averageSubArray(c, inputArray, length):
+        for i in range(0, len(inputArray) - length + 1):
+            sum = 0
+            for j in range(0, length):
+                sum = sum + inputArray[i+j]
+            print("sum = ", sum)
 averageSubArray = AverageSubArray()
-averageSubArray.averageSubArray([1,2,3,4], 2)
+averageSubArray.averageSubArray([-1, 22, -3, 4, -5] ,0)
+
