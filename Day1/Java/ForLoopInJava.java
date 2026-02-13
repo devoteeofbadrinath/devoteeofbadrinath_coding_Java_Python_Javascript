@@ -13,4 +13,5 @@ public class ForLoopInJava {
             System.out.println(inputArray[i]);
         }
     }
+
 }
