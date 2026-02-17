@@ -1,6 +1,6 @@
 function findAvgOfSubArrays(arr, K) {
     for(let i = 0; i <arr.length; i++){
-        console.log(arr[i])
+        console.log(2 * arr[i])
     }
 }
 
