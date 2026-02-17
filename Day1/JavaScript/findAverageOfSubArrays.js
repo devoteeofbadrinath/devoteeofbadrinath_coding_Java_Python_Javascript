@@ -4,4 +4,4 @@ function findAvgOfSubArrays(arr, K) {
     }
 }
 
-findAvgOfSubArrays([1,2,3,5], 2)
+findAvgOfSubArrays([1,2,3,5], 1)
