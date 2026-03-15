@@ -14,6 +14,7 @@ public class G_InterruptGatherer {
                 (_, element, downstream) -> {
                     System.out.println(element);
                     downstream.isRejecting();
+                    System.out.println(downstream.isRejecting());
                     return downstream.push(element);
                 });
         var res = largeList.stream().parallel().gather(limitGatherer).limit(10).toList();
