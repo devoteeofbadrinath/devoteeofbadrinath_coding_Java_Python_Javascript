@@ -22,7 +22,8 @@ public class E_FinisherGatherer {
                         downstream.push(new ArrayList<>(buffer));
                     }
                         });
-        var result = Stream.of(1, 2, 3, 4, 5, 6, 7).gather(batchGatherer).toList();
+        var result = Stream.of(1, 2, 3, 4, 5, 6, 7)
+                .map(input -> input * 2).gather(batchGatherer).toList();
         System.out.println(result);
     }
 }
