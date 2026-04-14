@@ -11,7 +11,7 @@ public class OptionalDemo {
         System.out.println(message.toUpperCase());
 
         Optional<String> optionalMsg = sayHi();
-        if(optionalMsg.isPresent())
+        if(!optionalMsg.isEmpty())
             System.out.println(optionalMsg.get().toUpperCase());
     }
 
