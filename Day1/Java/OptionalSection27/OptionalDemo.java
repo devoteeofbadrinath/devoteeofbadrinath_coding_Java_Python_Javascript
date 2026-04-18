@@ -4,32 +4,32 @@ import java.util.Optional;
 import java.util.Random;
 
 public class OptionalDemo {
-
     public static void main(String[] args) {
         String message = sayHello();
-        if (message != null)
-        System.out.println(message.toUpperCase());
+        if(message != null)
+            System.out.println(message.toUpperCase());
 
         Optional<String> optionalMsg = sayHi();
         if(!optionalMsg.isEmpty())
-            System.out.println(optionalMsg.get().toUpperCase());
+            System.out.println(optionalMsg.get());
+
+        optionalMsg.ifPresent(msg -> System.out.println("ifPresent : "+ msg.toUpperCase()));
     }
 
     public static String sayHello(){
         int num = new Random().nextInt();
         System.out.println(num);
 
-        if (num%2==0)
-        return "Hello World";
-        else
-            return null;
+        if(num % 2 == 0)
+            return "Hello World";
+        return null;
     }
 
     public static Optional<String> sayHi(){
         int num = new Random().nextInt();
         System.out.println(num);
         String msg = null;
-        if (num%2==0)
+        if(num % 2 == 0)
             msg = "Hi World";
         return Optional.ofNullable(msg);
     }
