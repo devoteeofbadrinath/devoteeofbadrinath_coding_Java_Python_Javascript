@@ -23,6 +23,14 @@ public class OptionalDemo {
         String msg2 = optionalMsg.orElseGet(() -> "Value is absent");
         System.out.println("orElseGet : " + msg2);
 
+        //String msg3 = optionalMsg.orElseThrow();
+        //String msg3 = optionalMsg.orElseThrow(() -> new IllegalStateException("Value is absent"));
+        //System.out.println("orElseThrow : " + msg3);
+
+        //Optional<String> mapOptionalStr = optionalMsg.map(input -> input.toUpperCase());
+        Optional<String> mapOptionalStr = optionalMsg.map(String::toUpperCase);
+        System.out.println(mapOptionalStr);
+
     }
 
     public static String sayHello(){
