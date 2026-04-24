@@ -31,6 +31,8 @@ public class OptionalDemo {
         Optional<String> mapOptionalStr = optionalMsg.map(String::toUpperCase);
         System.out.println(mapOptionalStr);
 
+        Optional<String> filterOptionalStr = optionalMsg.filter(value -> value.length()>50);
+        System.out.println(filterOptionalStr);
     }
 
     public static String sayHello(){
