@@ -13,7 +13,9 @@ public class StreamCreationDemo {
         departmentList.add("Marketing");
 
         Stream<String> depStream = departmentList.stream();
-        depStream.forEach(department -> System.out.println(department));
+        //depStream.forEach(department -> System.out.println(department));
+        // Using method reference
+        depStream.forEach(System.out::println);
 
     }
 }
