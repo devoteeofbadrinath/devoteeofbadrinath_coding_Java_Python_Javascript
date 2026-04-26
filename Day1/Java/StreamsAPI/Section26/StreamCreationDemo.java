@@ -17,5 +17,11 @@ public class StreamCreationDemo {
         // Using method reference
         depStream.forEach(System.out::println);
 
+        Stream<String> inStream = Stream.of("Eazy", "Bytes", "java");
+        inStream.forEach(System.out::println);
+
+        Stream<String> parallelStream = departmentList.parallelStream();
+        parallelStream.forEach(department -> System.out.println(department));
+
     }
 }
