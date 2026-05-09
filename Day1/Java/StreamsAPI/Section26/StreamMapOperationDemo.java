@@ -14,5 +14,10 @@ public class StreamMapOperationDemo {
         departmentList.stream()
                 .map(word -> word.toUpperCase())
                 .forEach(System.out::println);
+
+        departmentList.stream()
+                .map(word -> word.toUpperCase())
+                .map(word -> "Hi" + word)
+                .forEach(System.out::println);
     }
 }
