@@ -32,7 +32,6 @@ public class StreamCreationDemo {
         Stream<String> emptyString = Stream.empty();
 
         //Stream.generate(new Random()::nextInt).forEach(System.out::println);
-
         //Stream.iterate(1,n -> n+1).forEach(System.out::println);
 
     }
