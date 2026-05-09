@@ -1,6 +1,7 @@
 package Day1.Java.StreamsAPI.Section26;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -13,6 +14,7 @@ public class StreamCreationDemo {
         departmentList.add("Marketing");
 
         Stream<String> depStream = departmentList.stream();
+        depStream.parallel();
         //depStream.forEach(department -> System.out.println(department));
         // Using method reference
         depStream.forEach(System.out::println);
@@ -22,6 +24,11 @@ public class StreamCreationDemo {
 
         Stream<String> parallelStream = departmentList.parallelStream();
         parallelStream.forEach(department -> System.out.println(department));
+
+        String[] arrayOfWords = {"Eazy", "Bytes"};
+        Stream<String> streamOfWords = Arrays.stream(arrayOfWords);
+
+        Stream<String> emptyString = Stream.empty();
 
     }
 }
