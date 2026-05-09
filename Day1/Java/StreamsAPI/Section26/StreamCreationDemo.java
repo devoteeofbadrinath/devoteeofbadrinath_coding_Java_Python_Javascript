@@ -3,6 +3,7 @@ package Day1.Java.StreamsAPI.Section26;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Stream;
 
 public class StreamCreationDemo {
@@ -29,6 +30,10 @@ public class StreamCreationDemo {
         Stream<String> streamOfWords = Arrays.stream(arrayOfWords);
 
         Stream<String> emptyString = Stream.empty();
+
+        //Stream.generate(new Random()::nextInt).forEach(System.out::println);
+
+        //Stream.iterate(1,n -> n+1).forEach(System.out::println);
 
     }
 }
