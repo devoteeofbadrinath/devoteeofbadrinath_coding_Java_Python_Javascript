@@ -7,7 +7,7 @@ public class StreamFlatMapOperationDemo {
 
     public static void main(String[] args) {
 
-        String[] arrayOfWords = {"Eazy", "Bytes"}
+        String[] arrayOfWords = {"Eazy", "Bytes"};
 
         Stream<String> streamOfWords = Arrays.stream(arrayOfWords);
 
