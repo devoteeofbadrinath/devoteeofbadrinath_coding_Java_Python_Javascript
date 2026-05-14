@@ -14,5 +14,7 @@ public class StreamFlatMapOperationDemo {
         Stream<String []> streamOfLetters = streamOfWords.map(word -> word.split(""));
         streamOfLetters.flatMap(Arrays::stream).forEach(System.out::println);
 
+        List<Person> persons =
+
     }
 }
