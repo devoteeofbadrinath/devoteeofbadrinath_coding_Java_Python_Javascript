@@ -1,6 +1,7 @@
 package Day1.Java.StreamsAPI.Section26;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class StreamFlatMapOperationDemo {
@@ -14,7 +15,8 @@ public class StreamFlatMapOperationDemo {
         Stream<String []> streamOfLetters = streamOfWords.map(word -> word.split(""));
         streamOfLetters.flatMap(Arrays::stream).forEach(System.out::println);
 
-        List<Person> persons =
+        List<Person> persons = Arrays.asList(new Person("Alice", Arrays.asList("123", "456")),
+                new Person("Bob", Arrays.asList("789", "101", "112")));
 
     }
 }
