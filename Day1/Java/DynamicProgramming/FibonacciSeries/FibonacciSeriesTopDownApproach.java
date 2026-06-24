@@ -6,4 +6,7 @@ public class FibonacciSeriesTopDownApproach {
 
         System.out.println("Narayan Narayan Hari Hari");
     }
+    void fibonacciSeriesTopDownApproach(){
+        System.out.println("FibonacciSeries");
+    }
 }
