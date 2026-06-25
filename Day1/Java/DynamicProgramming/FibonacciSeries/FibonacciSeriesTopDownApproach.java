@@ -4,7 +4,7 @@ public class FibonacciSeriesTopDownApproach {
 
     public static void main(String[] args) {
 
-        System.out.println("Narayan Narayan Hari Hari");
+        System.out.println("Narayan Narayan Hari");
     }
     void fibonacciSeriesTopDownApproach(){
         System.out.println("FibonacciSeries");
