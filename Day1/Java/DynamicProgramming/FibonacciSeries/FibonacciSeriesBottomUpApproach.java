@@ -5,7 +5,7 @@ public class FibonacciSeriesBottomUpApproach {
     public static void main(String[] args) {
         FibonacciSeriesBottomUpApproach fibonacciSeriesBottomUpApproach = new FibonacciSeriesBottomUpApproach();
         System.out.println("Shreeman Narayan Narayan Hari Hari");
-        System.out.println(fibonacciSeriesBottomUpApproach.fibonacciBottomUpApproach(2));
+        System.out.println(fibonacciSeriesBottomUpApproach.fibonacciBottomUpApproach(4));
     }
 
     int fibonacciBottomUpApproach(int n) {
