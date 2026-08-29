@@ -8,9 +8,10 @@ public class FibonacciSeriesTopDownApproach {
         System.out.println(fibonacciSeriesTopDownApproach.fibonacciSeriesTopDownApproach(50));
     }
 
-    int fibonacciSeriesTopDownApproach(int n){
+    int fibonacciSeriesTopDownApproach(int n) {
         if (n <= 1)
             return n;
-        else return fibonacciSeriesTopDownApproach(n-1) + fibonacciSeriesTopDownApproach(n-2);
+        else
+            return fibonacciSeriesTopDownApproach(n - 1) + fibonacciSeriesTopDownApproach(n - 2);
     }
 }
