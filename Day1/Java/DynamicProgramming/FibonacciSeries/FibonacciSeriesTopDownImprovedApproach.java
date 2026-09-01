@@ -11,8 +11,9 @@ public class FibonacciSeriesTopDownImprovedApproach {
     int fibonacciSeriesTopDownImprovedApproach(int n) {
         if (n <= 1)
             return n;
-        else fib[n] = fibonacciSeriesTopDownImprovedApproach(n - 1) + fibonacciSeriesTopDownImprovedApproach(n - 2);
-            return fib[n]
+        else
+            fib[n] = fibonacciSeriesTopDownImprovedApproach(n - 1) + fibonacciSeriesTopDownImprovedApproach(n - 2);
+        return fib[n];
     }
 
 }
