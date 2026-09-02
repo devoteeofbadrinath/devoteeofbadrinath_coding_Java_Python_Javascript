@@ -1,7 +1,5 @@
 package Day1.Java.DynamicProgramming.FibonacciSeries;
 
-import java.text.NumberFormat.Field;
-
 public class FibonacciSeriesTopDownImprovedApproach {
 
     int[] fib = new int[100];
