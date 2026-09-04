@@ -5,7 +5,7 @@ public class LCS {
 
     public static void main(String[] args) {
         LCS lcs = new LCS();
-        System.out.println(lcs.lcs(0, 0, "AB", "CD", 0));
+        System.out.println(lcs.lcs(0, 0, "AB", "C", 0));
         System.out.println(lcs.functionCallCount);
     }
 
