@@ -5,12 +5,13 @@ public class LCS {
 
     public static void main(String[] args) {
         LCS lcs = new LCS();
-        System.out.println(lcs.lcs(0, 0, "AB", "C", 0));
+        System.out.println(lcs.lcs(0, 0, "AB", "CD", 0));
         System.out.println(lcs.functionCallCount);
     }
 
     int lcs(int i, int j, String s1, String s2, int subSequenceLength) {
         functionCallCount++;
+        System.out.println("i: " + i + ", j: " + j + ", functionCallCount: " + functionCallCount);
         if (i == s1.length() || j == s2.length()) {
             return subSequenceLength;
         } else if (s1.charAt(i) == s2.charAt(j)) {
@@ -20,5 +21,4 @@ public class LCS {
                     lcs(i, j + 1, s1, s2, subSequenceLength));
         }
     }
-
 }
