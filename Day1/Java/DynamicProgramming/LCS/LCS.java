@@ -1,5 +1,11 @@
 package Day1.Java.DynamicProgramming.LCS;
 
+class LcsCall {
+    int index1;
+    int index2;
+    int subSequenceLength;
+}
+
 public class LCS {
     int functionCallCount = 0;
 
