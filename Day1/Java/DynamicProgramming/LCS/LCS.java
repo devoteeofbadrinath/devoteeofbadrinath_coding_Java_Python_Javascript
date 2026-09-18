@@ -8,6 +8,7 @@ class LcsCall {
 
 public class LCS {
     int functionCallCount = 0;
+    LcsCall[] lcsCall = new LcsCall[6];
 
     public static void main(String[] args) {
         LCS lcs = new LCS();
